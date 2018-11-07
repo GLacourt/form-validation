@@ -1,0 +1,32 @@
+{
+    "name": "adfab/form-validation",
+    "type": "symfony-bundle",
+    "description": "Symfony Form Js Validation Bundle",
+    "keywords": [
+        "Symfony",
+        "form",
+        "javascript",
+        "validation"
+    ],
+    "authors": [
+        {
+            "name": "Guillaume Lacourt",
+            "email": "guillaume.lacourt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/symfony": ">=4.0.0"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Adfab\\FormValidation\\": ""
+        }
+    },
+    "repositories": {
+
+    },
+    "minimum-stability": "dev"
+}
