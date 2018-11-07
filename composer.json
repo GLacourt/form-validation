@@ -25,8 +25,11 @@
             "Adfab\\FormValidation\\": ""
         }
     },
-    "repositories": {
-
-    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/GLacourt/form-validation"
+        }
+    ],
     "minimum-stability": "dev"
 }
