@@ -1,5 +1,5 @@
 {
-    "name": "adfab/form-validation",
+    "name": "glacourt/form-validation",
     "type": "symfony-bundle",
     "description": "Symfony Form Js Validation Bundle",
     "keywords": [
@@ -24,12 +24,5 @@
         "psr-4": {
             "Adfab\\FormValidation\\": ""
         }
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/GLacourt/form-validation"
-        }
-    ],
-    "minimum-stability": "dev"
+    }
 }
