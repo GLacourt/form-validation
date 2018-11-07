@@ -1,4 +1,0 @@
-Adfab\FormValidation\Form\BaseValidatorExtension:
-  tags:
-  - name: form.type_extension
-    extended_type: Symfony\Component\Form\Extension\Core\Type\FormType

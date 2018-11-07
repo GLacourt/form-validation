@@ -34,6 +34,26 @@ class Configuration implements ConfigurationInterface
 
         $rootNode = $treeBuilder->root('form.validation');
 
+        $rootNode
+            ->children()
+                ->scalarNode('lib')
+                    ->isRequired()
+                    ->validate()
+                        ->ifNotInArray(['jQueryFormValidator', 'Parsley', 'ValidateJS'])
+                        ->thenInvalid('Invalid lib')
+                    ->end()
+                ->end()
+            ->end()
+            ->children()
+                ->arrayNode('mapping')
+                    ->children()
+                        ->scalarNode('constraint')->end()
+                        ->scalarNode('bridge')->end()
+                    ->end()
+                ->end()
+            ->end()
+        ;
+
         return $treeBuilder;
     }
 }

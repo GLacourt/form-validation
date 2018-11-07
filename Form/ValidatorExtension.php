@@ -30,7 +30,7 @@ use Symfony\Component\Validator\Mapping\MetadataInterface;
 /**
  * Class BaseValidatorExtension
  */
-class BaseValidatorExtension extends AbstractTypeExtension implements ValidatorInterface
+class ValidatorExtension extends AbstractTypeExtension implements ValidatorInterface
 {
     /** @var ValidatorInterface $validator */
     protected $validator;

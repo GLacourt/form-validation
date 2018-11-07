@@ -5,9 +5,8 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <!-- Default configuration for services in *this* file -->
-        <defaults autowire="true" autoconfigure="true" public="false" />
-
-        <prototype namespace="App\" resource="../src/*" exclude="../src/{Entity,Migrations,Tests}" />
+        <service id="Adfab\FormValidation\Form\ValidatorExtension">
+            <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\FormType"/>
+        </service>
     </services>
 </container>
