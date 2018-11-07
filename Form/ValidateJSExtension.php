@@ -1,6 +1,6 @@
 <?php
 /**
- * Class FormValidatorExtension
+ * Class ValidateJSExtension
  *
  * PHP Version 7.0
  *
@@ -15,7 +15,7 @@
  * @link     Null
  */
 
-namespace App\Form\Extension;
+namespace Adfab\FormValidation\Form;
 
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
@@ -30,35 +30,9 @@ use Symfony\Component\Validator\Mapping\MetadataInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 /**
- * Class FormValidatorExtension
+ * Class ValidateJSExtension
  */
-class FormValidatorExtension extends BaseValidatorExtension
+class ValidateJSExtension extends BaseValidatorExtension
 {
-    /**
-     * @param string|null $property
-     * @param array       $constraints
-     *
-     * @return array
-     */
-    protected function transpile(string $property = null, array $constraints = [])
-    {
-        $validate = [];
-
-        foreach ($constraints as $constraint) {
-            switch (get_class($constraint)) {
-                case NotBlank::class:
-                    $validate[] = [
-                        $property => [
-                            'presence'   => [
-                                'message' => $constraint->message,
-                            ],
-                            'allowEmpty' => false,
-                        ],
-                    ];
-                    break;
-            }
-        }
-
-        return $validate;
-    }
+    
 }

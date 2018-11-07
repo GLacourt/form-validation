@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:adfab-form-validation="http://adfab.fr/schema/dic/form-validation"
+           xsi:schemaLocation="http://adfab.fr/schema/dic/form-validation
+        http://adfab.fr/schema/dic/form-validation/form-validation-1.0.xsd">
+
+    <adfab-form-validation:config>
+    </adfab-form-validation:config>
+</container>

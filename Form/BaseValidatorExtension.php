@@ -17,6 +17,7 @@
 
 namespace App\Form\Extension;
 
+use Adfab\FormValidation\Form\ValidatorInterface;
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\FormInterface;
@@ -25,12 +26,11 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Mapping\MetadataInterface;
-use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 /**
  * Class BaseValidatorExtension
  */
-class BaseValidatorExtension extends AbstractTypeExtension
+class BaseValidatorExtension extends AbstractTypeExtension implements ValidatorInterface
 {
     /** @var ValidatorInterface $validator */
     protected $validator;
